@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Rahul - personal portfolio</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+
+
+
+
+
+    
+</head>
+
+<body id="top" class="light_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Rahul<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="index.html#about" class="navbar-link">About Me </a>
+          </li>
+
+          <li>
+            <a href="index.html#portfolio" class="navbar-link">Our Works</a>
+          </li>
+
+          <li>
+            <a href="index.html#contact" class="navbar-link">Contact Me</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+<br>
+<br>
+<br>
+
+
+ 
+
+ 
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Navigation Component with Variables</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+
+
+
+
+
+    <style>
+        
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .blog-header {
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        
+        .code-block {
+            background: #f7f7f7;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .thumbnail-section, .useful-images-section {
+            margin: 3rem 0;
+        }
+        
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .thumbnail-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .thumbnail-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        .thumbnail-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .thumbnail-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .image-caption {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: #007bff;
+        }
+        
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: #e9ecef;
+            padding: 0.3rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #495057;
+        }
+        
+        .useful-images-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        @media (max-width: 640px) {
+            .useful-images-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .image-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .image-card-content {
+            padding: 1rem;
+        }
+        
+        .image-card-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .image-full {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .author-section {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            margin-right: 1rem;
+            background-color: #ddd;
+        }
+        
+        .author-info {
+            flex: 1;
+        }
+        
+        .author-name {
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+        
+        .author-bio {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .highlight {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+    
+<br>
+    
+<main class="container">
+    <article>
+        <h1>Blood Donation Organization Program</h1>
+
+        <div class="flex flex-wrap mb-6">
+            <span class="tag">DonateBlood</span>
+            <span class="tag">SaveLives</span>
+            <span class="tag">BloodDrive2082</span>
+            <span class="tag">CommunityHealth</span>
+            <span class="tag">HumanityFirst</span>
+        </div>
+
+        <div class="thumbnail-section">
+            <img src="assets/blog-img/5fifth-1-banner.jpg" alt="Blood Donation Program Header" class="image-full">
+        </div>
+
+        <p>Every drop counts. The <strong>Blood Donation Organization Program</strong> is a life-saving initiative aimed at spreading awareness, encouraging voluntary donors, and ensuring no one dies due to a lack of blood. It’s more than an event—it’s a movement of compassion and responsibility.</p>
+
+        <p>With increasing demand in hospitals, accidents, and surgeries, safe and timely blood availability is a crucial need. This program is built to unite people under one cause: *give blood, give life*.</p>
+
+        <h2>❤️ The Need for Blood Donation</h2>
+
+        <p>Every 2 seconds, someone somewhere needs blood. But most people are unaware of how easy it is to donate and how impactful it can be. Through this program, we aim to debunk myths, educate communities, and create a sustainable donor ecosystem.</p>
+
+        <p>We cover eligibility criteria, safety measures, and how donated blood is tested and distributed to patients in need. From thalassemia children to accident victims, your donation can bring hope where it's needed most.</p>
+
+        <div class="useful-images-section">
+            <h3 class="text-xl font-semibold mb-4">Core Campaign Focus</h3>
+            <div class="useful-images-grid">
+                <div class="image-card">
+                    <img src="assets/blog-img/5fifth-2.jpg" alt="Who Can Donate Blood" class="w-full">
+                    <div class="image-card-content">
+                        <h4 class="image-card-title">Who Can Donate</h4>
+                        <p class="text-sm text-gray-600">Know the simple eligibility rules—most healthy adults qualify to donate.</p>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="assets/blog-img/5fifth-3.jpg" alt="Benefits of Blood Donation" class="w-full">
+                    <div class="image-card-content">
+                        <h4 class="image-card-title">Health & Humanity</h4>
+                        <p class="text-sm text-gray-600">Donating helps you stay healthy—and helps someone live longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>Participants will also learn about blood groups, how donations are stored and used, and the importance of regular blood drives in building resilient healthcare systems.</p>
+
+        <div class="highlight">
+            <p><strong>Pro tip:</strong> You can donate blood every 3 months. Mark it on your calendar and make it a habit of kindness.</p>
+        </div>
+
+        <h2>🩸 Common Myths About Blood Donation</h2>
+
+        <p>"It weakens you." "It’s painful." "It’s risky." These are some of the many myths we’ll bust during the awareness session. With proper hygiene and trained professionals, donating blood is completely safe and takes just 15 minutes.</p>
+
+        <p>We’ll also go over best practices for before and after donation—what to eat, how to rest, and how to inspire others to join the cause.</p>
+
+        <div class="code-block">
+            <pre>"You don’t need to be a doctor to save lives—just a donor."</pre>
+        </div>
+
+       
+
+        <h2>🏥 On-Site Donation & Certification</h2>
+
+        <p>On the day of the camp, trained medical professionals manage the entire donation process—from registration and screening to donation and post-care. Participants receive certificates of appreciation, refreshments, and lots of love from the organizing team.</p>
+
+        <p>We also collaborate with local hospitals and blood banks to ensure ethical handling, storage, and usage of the collected blood.</p>
+
+        <div class="useful-images-section">
+            <h3 class="text-xl font-semibold mb-4">Empathy in Action</h3>
+            <div class="useful-images-grid">
+                <div class="image-card">
+                    <img src="assets/blog-img/5fifth-4.jpg" alt="Volunteer Support" class="w-full">
+                    <div class="image-card-content">
+                        <h4 class="image-card-title">Volunteer Teams</h4>
+                        <p class="text-sm text-gray-600">From guiding donors to helping them relax, every hand helps.</p>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="assets/blog-img/5fifth-5.jpg" alt="Medical Supervision" class="w-full">
+                    <div class="image-card-content">
+                        <h4 class="image-card-title">Certified Professionals</h4>
+                        <p class="text-sm text-gray-600">Safety and hygiene come first—every donation is well-managed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="code-block">
+            <pre>"One pint of blood can save up to three lives. Imagine the power in your veins."</pre>
+        </div>
+
+        <h2>📢 Be a Lifesaver Today</h2>
+
+        <p>Whether you’re a first-time donor or a regular hero, your participation makes a difference. The *Blood Donation Organization Program* is your chance to be part of something larger than yourself.</p>
+
+        <p>Join hands, roll up your sleeve, and become a silent hero in someone’s survival story. Because giving blood doesn’t cost anything—but it means everything.</p>
+
+        
+
+        <div class="author-section">
+            <img src="assets/images/about-picture.png" class="author-image">
+            <div class="author-info">
+                <p class="author-name">Rahul Thakur</p>
+                <p class="author-bio">Health Awareness Volunteer and Blood Donation Campaigner working to make generosity a daily habit for humanity.</p>
+            </div>
+        </div>
+    </article>
+</main>
+
+    
+<br>
+
+
+
+
+
+
+    
+    
+    <script>
+        // Simple JavaScript for mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add scroll animation for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add hover effect for thumbnail items
+            const thumbnailItems = document.querySelectorAll('.thumbnail-item');
+            thumbnailItems.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    item.style.transform = 'translateY(-5px)';
+                });
+                
+                item.addEventListener('mouseleave', () => {
+                    item.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+ <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Rahul Thakur<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2025 <a href="#">Developed by sky10x.com </a>. All rights reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul - personal portfolio</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+
+
+
+
+
+    
+</head>
+
+<body id="top" class="light_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Rahul<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="index.html#about" class="navbar-link">About Me </a>
+          </li>
+
+          <li>
+            <a href="index.html#portfolio" class="navbar-link">Our Works</a>
+          </li>
+
+          <li>
+            <a href="index.html#contact" class="navbar-link">Contact Me</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+<br>
+<br>
+<br>
+
+
+ 
+
+ 
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 Mental Health Awareness Program</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+
+
+
+
+
+    <style>
+        
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .blog-header {
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        
+        .code-block {
+            background: #f7f7f7;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .thumbnail-section, .useful-images-section {
+            margin: 3rem 0;
+        }
+        
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .thumbnail-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .thumbnail-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        .thumbnail-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .thumbnail-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .image-caption {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: #007bff;
+        }
+        
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: #e9ecef;
+            padding: 0.3rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #495057;
+        }
+        
+        .useful-images-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        @media (max-width: 640px) {
+            .useful-images-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .image-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .image-card-content {
+            padding: 1rem;
+        }
+        
+        .image-card-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .image-full {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .author-section {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            margin-right: 1rem;
+            background-color: #ddd;
+        }
+        
+        .author-info {
+            flex: 1;
+        }
+        
+        .author-name {
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+        
+        .author-bio {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .highlight {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+    
+<br>
+    
+    <main class="container">
+        <article>
+            <h1>🧠 Mental Health Awareness Program</h1>
+            
+            <div class="flex flex-wrap mb-6">
+                <span class="tag">MentalHealth</span>
+                <span class="tag">Awareness</span>
+                <span class="tag">SelfCare </span>
+                <span class="tag">Wellbeing</span>
+                <span class="tag">BreakTheStigma</span>
+            </div>
+            
+            <div class="thumbnail-section">
+                <img src="assets/blog-img/1first-1-banner.jpg" alt="Navigation Component Header" class="image-full">
+            </div>
+            
+            <p>Mental health is not a destination but a journey, a daily practice of caring for our emotional, psychological, and social well-being. In this awareness initiative, we aim to shed light on the importance of mental health, break the stigma surrounding it, and inspire people to seek help and support one another without judgment.</p>
+            
+            <p>Understanding and nurturing mental health can lead to a more balanced life, better decision-making, stronger relationships, and increased productivity. It's time to prioritize our minds as much as we do our bodies.</p>
+
+            <h2>Starting with Self-Awareness</h2>
+            
+            <p>Self-awareness is the first step toward mental well-being. Being able to recognize our thoughts, emotions, and behaviors gives us control over how we respond to challenges. Daily mindfulness, journaling, or simply talking to a trusted friend can help develop this self-awareness.</p>
+            
+            <p>Our mental health journey begins by identifying the stressors in our life and taking proactive steps to manage them. Whether it’s through therapy, meditation, regular physical activity, or setting boundaries, each small action contributes to a healthier mind.</p>
+
+            <div class="useful-images-section">
+                <h3 class="text-xl font-semibold mb-4">Emotional Structure</h3>
+                <div class="useful-images-grid">
+                    <div class="image-card">
+                        <img src="assets/blog-img/1first-2.jpg" alt="Navigation Structure" class="w-full">
+                        <div class="image-card-content">
+                            <h4 class="image-card-title">Identifying Emotional Layers</h4>
+                            <p class="text-sm text-gray-600">Understanding how emotions affect thoughts and actions.</p>
+                        </div>
+                    </div>
+                    <div class="image-card">
+                        <img src="assets/blog-img/1first-3.jpg" alt="Component Hierarchy" class="w-full">
+                        <div class="image-card-content">
+                            <h4 class="image-card-title">Mental Health Hierarchy</h4>
+                            <p class="text-sm text-gray-600">Addressing basic emotional needs to build long-term resilience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>Much like constructing a building, the foundation of mental wellness must be strong. This includes emotional safety, support systems, and acceptance of vulnerability.</p>
+            
+            <div class="highlight">
+                <p><strong>Pro tip:</strong> Mental wellness begins by being honest with yourself. Speak kindly to your inner voice—it listens more than you think.</p>
+            </div>
+
+            <img src="assets/blog-img/1first-5.jpg" alt="Variable Configuration" class="w-full">
+
+            <h2>Layering Support Systems</h2>
+            
+            <p>Once we acknowledge our emotions and stressors, the next step is building a support system. This may include friends, family, professionals, and community programs. Having safe people and places to turn to makes it easier to navigate life’s inevitable ups and downs.</p>
+            
+            <p>It’s important to remember that no one has to walk alone. The strength in sharing, listening, and supporting one another can help break the silence surrounding mental health struggles.</p>
+            
+            <div class="code-block">
+                <pre>"Your mental health matters. You are not alone, you are not weak. You are human, and asking for help is one of the bravest things you can do."</pre>
+            </div>
+
+            <h2>Breaking Stigma with Conversations</h2>
+            
+            <p>We must normalize talking about mental health just as we talk about physical health. A supportive conversation can save a life. Whether you’re reaching out or opening up, remember: vulnerability is not weakness—it's courage in action.</p>
+
+            <p>Event-based awareness campaigns, school and college workshops, social media storytelling, and empathy training in workplaces can all play a vital role in breaking the stigma.</p>
+
+            <div class="useful-images-section">
+                <h3 class="text-xl font-semibold mb-4">Empathy in Action</h3>
+                <div class="useful-images-grid">
+                    <div class="image-card">
+                        <img src="assets/blog-img/1first-4.jpg" alt="Event Handling Flow" class="w-full">
+                        <div class="image-card-content">
+                            <h4 class="image-card-title">Listening with Empathy</h4>
+                            <p class="text-sm text-gray-600">Be the person who hears what's not said aloud.</p>
+                        </div>
+                    </div>
+                    <div class="image-card">
+                        <img src="assets/blog-img/1first-6.jpg" alt="Variable Configuration" class="w-full">
+                        <div class="image-card-content">
+                            <h4 class="image-card-title">Open Conversations</h4>
+                            <p class="text-sm text-gray-600">Create safe spaces for mental health discussions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block">
+                <pre>"Let’s talk about mental health the same way we talk about the weather—openly, regularly, and without fear."</pre>
+            </div>
+
+            <h2>What Does Healing Look Like?</h2>
+            
+            <p>Healing isn’t linear. Some days will be better than others, and that’s okay. Progress in mental health looks like getting out of bed when you don’t feel like it, saying no without guilt, taking a walk to clear your mind, or reaching out when you're struggling.</p>
+
+            <p>The healing journey is deeply personal and incredibly powerful. Through awareness, compassion, and collective action, we can build a world where mental health is treated with the care and dignity it deserves.</p>
+
+
+            <div class="author-section">
+                <img src="assets/images/about-picture.png" class="author-image">
+                <div class="author-info">
+                    <p class="author-name">Rahul Thakur</p>
+                    <p class="author-bio">Mental Health Advocate and Creative Writer passionate about spreading awareness and emotional education across digital platforms.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    
+<br>
+
+
+
+
+
+
+    
+    
+    <script>
+        // Simple JavaScript for mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add scroll animation for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add hover effect for thumbnail items
+            const thumbnailItems = document.querySelectorAll('.thumbnail-item');
+            thumbnailItems.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    item.style.transform = 'translateY(-5px)';
+                });
+                
+                item.addEventListener('mouseleave', () => {
+                    item.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+   <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Rahul Thakur<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2025 <a href="#">Developed by sky10x.com </a>. All rights reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

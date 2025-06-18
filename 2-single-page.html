@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul - personal portfolio</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+
+
+
+
+
+    
+</head>
+
+<body id="top" class="light_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Rahul<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="index.html#about" class="navbar-link">About Me </a>
+          </li>
+
+          <li>
+            <a href="index.html#portfolio" class="navbar-link">Our Works</a>
+          </li>
+
+          <li>
+            <a href="index.html#contact" class="navbar-link">Contact Me</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+<br>
+<br>
+<br>
+
+
+ 
+
+ 
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Writing Workshop Program</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+
+
+
+
+
+    <style>
+        
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .blog-header {
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        
+        .code-block {
+            background: #f7f7f7;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .thumbnail-section, .useful-images-section {
+            margin: 3rem 0;
+        }
+        
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .thumbnail-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .thumbnail-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        .thumbnail-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .thumbnail-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .image-caption {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: #007bff;
+        }
+        
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: #e9ecef;
+            padding: 0.3rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #495057;
+        }
+        
+        .useful-images-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        @media (max-width: 640px) {
+            .useful-images-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .image-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .image-card-content {
+            padding: 1rem;
+        }
+        
+        .image-card-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .image-full {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .author-section {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            margin-right: 1rem;
+            background-color: #ddd;
+        }
+        
+        .author-info {
+            flex: 1;
+        }
+        
+        .author-name {
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+        
+        .author-bio {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .highlight {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+    
+  <br>
+    
+<main class="container">
+    <article>
+        <h1>📝Resume Writing Workshop Program</h1>
+
+        <div class="flex flex-wrap mb-6">
+            <span class="tag">CareerGrowth</span>
+            <span class="tag">ResumeTips</span>
+            <span class="tag">JobReady</span>
+            <span class="tag">ProfessionalDevelopment</span>
+            <span class="tag">Workshop</span>
+        </div>
+
+        <div class="thumbnail-section">
+            <img src="assets/blog-img/2second-1-banner.jpg" alt="Resume Workshop Header" class="image-full">
+        </div>
+
+        <p>In today’s competitive world, your resume isn’t just a document—it’s your *first impression*, your voice before the interview, and your passport to opportunities. This workshop dives deep into how to write a resume that’s not just good, but unforgettable.</p>
+
+        <p>Whether you’re stepping into the workforce for the first time, switching industries, or re-entering after a gap, this workshop is designed for you. Together, we will transform your story into a powerful, professional resume that speaks for you.</p>
+
+        <h2>🔍 Understanding Resume Fundamentals</h2>
+
+        <p>A great resume tells your story clearly. It doesn’t list everything; it highlights what matters. We’ll cover structure: headlines, summaries, experience, education, skills, and achievements—what goes where and why.</p>
+
+        <p>You’ll learn what hiring managers are really looking for and how to speak their language with keywords, results, and strong action verbs. This is about impact, not just information.</p>
+
+        <div class="useful-images-section">
+            <h3 class="text-xl font-semibold mb-4">Key Resume Elements</h3>
+            <div class="useful-images-grid">
+                <div class="image-card">
+                    <img src="assets/blog-img/2second-2.jpg" alt="Resume Format Basics" class="w-full">
+                    <div class="image-card-content">
+                        <h4 class="image-card-title">Choosing the Right Format</h4>
+                        <p class="text-sm text-gray-600">Chronological, Functional, or Hybrid—match format to your story.</p>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="assets/blog-img/2second-3.jpg" alt="Resume Sections Breakdown" class="w-full">
+                    <div class="image-card-content">
+                        <h4 class="image-card-title">Showcasing Skills Effectively</h4>
+                        <p class="text-sm text-gray-600">Demonstrate what makes you valuable in any role you pursue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>Through live demos and real-world examples, we’ll show how even small changes can turn a dull resume into a game-changer.</p>
+
+        <div class="highlight">
+            <p><strong>Pro tip:</strong> Customize your resume for every role. Mirror keywords from job listings to pass through ATS (Applicant Tracking Systems).</p>
+        </div>
+
+        <h2>🚫 Overcoming Common Resume Mistakes</h2>
+
+        <p>Most resumes fail due to common but avoidable mistakes. Missing contact details, weak language, irrelevant details—we'll show you how to fix them all.</p>
+
+        <p>Discover how layout, fonts, white space, and even file type can boost or bury your chances. Simplicity, clarity, and purpose are key.</p>
+
+        <div class="code-block">
+            <pre>"Think of your resume as a marketing tool—it's not just about listing what you've done, it's about proving what you can do next."</pre>
+        </div>
+
+
+        <h2>👥 Interactive Resume Clinics</h2>
+
+        <p>The real magic? Personalized feedback. Bring your resume and get one-on-one critiques from experienced career coaches who know what works—and what doesn't.</p>
+
+        <p>You’ll walk away with not just an improved resume but clarity on how to evolve it as you grow professionally.</p>
+
+        <div class="useful-images-section">
+            <h3 class="text-xl font-semibold mb-4">Resume Writing in Action</h3>
+            <div class="useful-images-grid">
+                <div class="image-card">
+                    <img src="assets/blog-img/2second-1-banner.jpg" alt="Resume Review Session" class="w-full">
+                    <div class="image-card-content">
+                        <h4 class="image-card-title">Live Edits & Feedback</h4>
+                        <p class="text-sm text-gray-600">Get your resume critiqued in real-time for improvement.</p>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="assets/blog-img/2second-2.jpg" alt="Career Workshop Discussion" class="w-full">
+                    <div class="image-card-content">
+                        <h4 class="image-card-title">Group Q&A Sessions</h4>
+                        <p class="text-sm text-gray-600">Ask questions and share insights with peers and mentors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="code-block">
+            <pre>"Your resume is the first impression. Let’s make it unforgettable."</pre>
+        </div>
+
+        <h2>🚀 Ready to Craft Your Story?</h2>
+
+        <p>This workshop is more than a resume class—it’s a confidence builder. It helps you own your story and present it proudly.</p>
+
+        <p>Whether you're a student, graduate, job seeker, or a professional looking to level up—join us. It’s time to learn, improve, and take charge of your future with a resume that truly reflects *you*.</p>
+
+
+        <div class="author-section">
+            <img src="assets/images/about-picture.png" class="author-image">
+            <div class="author-info">
+                <p class="author-name">Rahul Thakur</p>
+                <p class="author-bio">Career Coach and Resume Strategist dedicated to helping job seekers tell their stories with confidence and clarity.</p>
+            </div>
+        </div>
+    </article>
+</main>
+
+    
+  <br>
+
+
+
+
+
+
+    
+    
+    <script>
+        // Simple JavaScript for mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add scroll animation for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add hover effect for thumbnail items
+            const thumbnailItems = document.querySelectorAll('.thumbnail-item');
+            thumbnailItems.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    item.style.transform = 'translateY(-5px)';
+                });
+                
+                item.addEventListener('mouseleave', () => {
+                    item.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Rahul Thakur<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2025 <a href="#">Developed by sky10x.com </a>. All rights reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

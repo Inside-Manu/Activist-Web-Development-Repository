@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul - personal portfolio</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+
+
+
+
+
+    
+</head>
+
+<body id="top" class="light_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Rahul<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="index.html#about" class="navbar-link">About Me </a>
+          </li>
+
+          <li>
+            <a href="index.html#portfolio" class="navbar-link">Our Works</a>
+          </li>
+
+          <li>
+            <a href="index.html#contact" class="navbar-link">Contact Me</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+<br>
+<br>
+<br>
+
+
+ 
+
+ 
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Starts Here & Building a Strong Foundation for Your Future</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+
+
+
+
+
+    <style>
+        
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .blog-header {
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        
+        .code-block {
+            background: #f7f7f7;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .thumbnail-section, .useful-images-section {
+            margin: 3rem 0;
+        }
+        
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .thumbnail-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .thumbnail-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        .thumbnail-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .thumbnail-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .image-caption {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: #007bff;
+        }
+        
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: #e9ecef;
+            padding: 0.3rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #495057;
+        }
+        
+        .useful-images-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        @media (max-width: 640px) {
+            .useful-images-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .image-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .image-card-content {
+            padding: 1rem;
+        }
+        
+        .image-card-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .image-full {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .author-section {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            margin-right: 1rem;
+            background-color: #ddd;
+        }
+        
+        .author-info {
+            flex: 1;
+        }
+        
+        .author-name {
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+        
+        .author-bio {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .highlight {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+    
+<br>
+    
+<main class="container">
+    <article>
+        <h1>Success Starts Here & Building a Strong Foundation for Your Future</h1>
+
+        <div class="flex flex-wrap mb-6">
+            <span class="tag">PersonalGrowth</span>
+            <span class="tag">SuccessMindset</span>
+            <span class="tag">FutureReady</span>
+            <span class="tag">SelfImprovement</span>
+            <span class="tag">LifeSkills</span>
+        </div>
+
+        <div class="thumbnail-section">
+            <img src="assets/blog-img/3third-1-banner.jpg" alt="Success Foundation Header" class="image-full">
+        </div>
+
+        <p>Every towering building begins with a deep, solid foundation. Similarly, long-term success doesn’t happen overnight—it starts with what you build today. This session is your invitation to lay the groundwork for the future you truly want.</p>
+
+        <p>Whether your goal is career growth, personal development, or building confidence, this workshop is designed to help you identify your strengths, set achievable goals, and take powerful first steps toward lasting success.</p>
+
+        <h2>🔎 Understanding the Core of Success</h2>
+
+        <p>Success isn’t a destination—it’s a mindset, a habit, a set of values. In this session, we’ll help you define what success means to you and how to align your thoughts, actions, and daily practices with that vision.</p>
+
+        <p>We’ll guide you through the essentials: self-discipline, goal setting, time management, and building a support system. You’ll learn how small, consistent efforts today shape your tomorrow.</p>
+
+        <div class="useful-images-section">
+            <h3 class="text-xl font-semibold mb-4">Pillars of a Strong Future</h3>
+            <div class="useful-images-grid">
+                <div class="image-card">
+                    <img src="assets/blog-img/3third-2.jpg" alt="Setting Goals" class="w-full">
+                    <div class="image-card-content">
+                        <h4 class="image-card-title">Setting Clear Goals</h4>
+                        <p class="text-sm text-gray-600">Without direction, effort gets lost. Learn how to set goals that lead to real progress.</p>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="assets/blog-img/3third-4.jpg" alt="Personal Development" class="w-full">
+                    <div class="image-card-content">
+                        <h4 class="image-card-title">Growing Every Day</h4>
+                        <p class="text-sm text-gray-600">Success is a daily habit. Build routines that nourish your future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>We’ll reflect on real-life journeys, struggles, and breakthroughs. You’ll see how people like you turned simple daily changes into powerful transformations.</p>
+
+        <div class="highlight">
+            <p><strong>Pro tip:</strong> Consistency beats intensity. It’s not about doing everything today—it’s about doing *something* every day.</p>
+        </div>
+
+        <h2>💡 Avoiding the Pitfalls</h2>
+
+        <p>The path to success isn’t without challenges. Fear, doubt, procrastination, and distractions can block our progress. In this session, we’ll identify these roadblocks and help you build mental strategies to overcome them.</p>
+
+        <p>With practical tools and self-awareness, you’ll learn how to bounce back from failure, stay focused during uncertainty, and stay true to your mission even when things get tough.</p>
+
+        <div class="code-block">
+            <pre>"Your future depends on what you do today. The smallest step in the right direction can become the biggest leap of your life."</pre>
+        </div>
+
+
+        <h2>🧠 Interactive Growth Circles</h2>
+
+        <p>Our group discussions are a space of honesty, motivation, and community. Share your thoughts, listen to others, and build a network that lifts you up.</p>
+
+        <p>You’ll engage in reflective exercises and real-world goal planning—walking away with your personalized roadmap for the next 6 months of growth and focus.</p>
+
+
+
+
+        <img src="assets/blog-img/3third-3.jpg" alt="Live Coaching" class="w-full">
+
+
+
+
+        <div class="code-block">
+            <pre>"Success is not a future event. It’s a present decision."</pre>
+        </div>
+
+        <h2>🌱 Ready to Begin?</h2>
+
+        <p>You don’t need to have everything figured out. You just need to begin. Success starts here—with your willingness to grow, your courage to take the first step, and your commitment to keep showing up.</p>
+
+        <p>Join us in this powerful session and walk away with clarity, confidence, and the foundation for the future you’re meant to build.</p>
+
+       
+
+        <div class="author-section">
+            <img src="assets/images/about-picture.png" class="author-image">
+            <div class="author-info">
+                <p class="author-name">Rahul Thakur</p>
+                <p class="author-bio">Motivational Coach and Mindset Mentor helping people build lives they’re proud to live—one powerful decision at a time.</p>
+            </div>
+        </div>
+    </article>
+</main>
+
+    
+<br>
+
+
+
+
+
+
+    
+    
+    <script>
+        // Simple JavaScript for mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add scroll animation for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add hover effect for thumbnail items
+            const thumbnailItems = document.querySelectorAll('.thumbnail-item');
+            thumbnailItems.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    item.style.transform = 'translateY(-5px)';
+                });
+                
+                item.addEventListener('mouseleave', () => {
+                    item.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+ <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Rahul Thakur<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2025 <a href="#">Developed by sky10x.com </a>. All rights reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
